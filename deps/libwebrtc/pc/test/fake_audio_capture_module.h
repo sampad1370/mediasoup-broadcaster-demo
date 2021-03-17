@@ -156,6 +156,16 @@ class FakeAudioCaptureModule : public webrtc::AudioDeviceModule,
   // be deleted directly.
   virtual ~FakeAudioCaptureModule();
 
+	int32_t NeedMorePlayData(
+		const size_t nSamples,
+		const size_t nBytesPerSample,
+		const size_t nChannels,
+		const uint32_t samplesPerSec,
+		void* audioSamples,
+		size_t& nSamplesOut,
+		int64_t* elapsed_time_ms,
+		int64_t* ntp_time_ms) const;
+
  private:
   // Initializes the state of the FakeAudioCaptureModule. This API is called on
   // creation by the Create() API.

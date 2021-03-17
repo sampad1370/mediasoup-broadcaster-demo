@@ -55,30 +55,42 @@ FakeAudioCaptureModule::~FakeAudioCaptureModule() {
   }
 }
 
+int32_t FakeAudioCaptureModule::NeedMorePlayData(const size_t nSamples, const size_t nBytesPerSample, const size_t nChannels, const uint32_t samplesPerSec, void *audioSamples, size_t &nSamplesOut, int64_t *elapsed_time_ms, int64_t *ntp_time_ms) const
+{
+	return audio_callback_->NeedMorePlayData(nSamples,
+																			nBytesPerSample,
+																			nChannels,
+																			samplesPerSec,
+																			audioSamples,
+																			nSamplesOut,
+																			elapsed_time_ms,
+																			ntp_time_ms);
+}
+
 rtc::scoped_refptr<FakeAudioCaptureModule> FakeAudioCaptureModule::Create() {
-  rtc::scoped_refptr<FakeAudioCaptureModule> capture_module(
-      new rtc::RefCountedObject<FakeAudioCaptureModule>());
-  if (!capture_module->Initialize()) {
-    return nullptr;
-  }
-  return capture_module;
+	rtc::scoped_refptr<FakeAudioCaptureModule> capture_module(
+		new rtc::RefCountedObject<FakeAudioCaptureModule>());
+	if (!capture_module->Initialize()) {
+		return nullptr;
+	}
+	return capture_module;
 }
 
 int FakeAudioCaptureModule::frames_received() const {
-  rtc::CritScope cs(&crit_);
-  return frames_received_;
+	rtc::CritScope cs(&crit_);
+	return frames_received_;
 }
 
 int32_t FakeAudioCaptureModule::ActiveAudioLayer(
-    AudioLayer* /*audio_layer*/) const {
-  RTC_NOTREACHED();
-  return 0;
+	AudioLayer* /*audio_layer*/) const {
+	RTC_NOTREACHED();
+	return 0;
 }
 
 int32_t FakeAudioCaptureModule::RegisterAudioCallback(
-    webrtc::AudioTransport* audio_callback) {
-  rtc::CritScope cs(&crit_callback_);
-  audio_callback_ = audio_callback;
+	webrtc::AudioTransport* audio_callback) {
+	rtc::CritScope cs(&crit_callback_);
+	audio_callback_ = audio_callback;
   return 0;
 }
 
@@ -98,28 +110,32 @@ bool FakeAudioCaptureModule::Initialized() const {
 }
 
 int16_t FakeAudioCaptureModule::PlayoutDevices() {
-  RTC_NOTREACHED();
-  return 0;
+  //RTC_NOTREACHED();
+  return 1;
 }
 
 int16_t FakeAudioCaptureModule::RecordingDevices() {
-  RTC_NOTREACHED();
-  return 0;
+  //RTC_NOTREACHED();
+  return 1;
 }
 
 int32_t FakeAudioCaptureModule::PlayoutDeviceName(
-    uint16_t /*index*/,
-    char /*name*/[webrtc::kAdmMaxDeviceNameSize],
-    char /*guid*/[webrtc::kAdmMaxGuidSize]) {
-  RTC_NOTREACHED();
+    uint16_t index,
+    char name[webrtc::kAdmMaxDeviceNameSize],
+    char guid[webrtc::kAdmMaxGuidSize]) {
+  //RTC_NOTREACHED();
+  name="VirtualBroadCastServer";
+  guid="0000000";
   return 0;
 }
 
 int32_t FakeAudioCaptureModule::RecordingDeviceName(
     uint16_t /*index*/,
-    char /*name*/[webrtc::kAdmMaxDeviceNameSize],
-    char /*guid*/[webrtc::kAdmMaxGuidSize]) {
-  RTC_NOTREACHED();
+    char name[webrtc::kAdmMaxDeviceNameSize],
+    char guid[webrtc::kAdmMaxGuidSize]) {
+  //RTC_NOTREACHED();
+  name="VirtualRecordDevice";
+  guid="0000001";
   return 0;
 }
 
@@ -241,7 +257,7 @@ int32_t FakeAudioCaptureModule::InitSpeaker() {
 
 bool FakeAudioCaptureModule::SpeakerIsInitialized() const {
   RTC_NOTREACHED();
-  return 0;
+  return 1;
 }
 
 int32_t FakeAudioCaptureModule::InitMicrophone() {
@@ -260,7 +276,7 @@ int32_t FakeAudioCaptureModule::SpeakerVolumeIsAvailable(bool* /*available*/) {
 }
 
 int32_t FakeAudioCaptureModule::SetSpeakerVolume(uint32_t /*volume*/) {
-  RTC_NOTREACHED();
+  //RTC_NOTREACHED();
   return 0;
 }
 
@@ -317,7 +333,7 @@ int32_t FakeAudioCaptureModule::SpeakerMuteIsAvailable(bool* /*available*/) {
 }
 
 int32_t FakeAudioCaptureModule::SetSpeakerMute(bool /*enable*/) {
-  RTC_NOTREACHED();
+  //RTC_NOTREACHED();
   return 0;
 }
 
@@ -381,7 +397,7 @@ int32_t FakeAudioCaptureModule::StereoRecording(bool* /*enabled*/) const {
 
 int32_t FakeAudioCaptureModule::PlayoutDelay(uint16_t* delay_ms) const {
   // No delay since audio frames are dropped.
-  *delay_ms = 0;
+  *delay_ms = 10;
   return 0;
 }
 
@@ -410,11 +426,18 @@ bool FakeAudioCaptureModule::Initialize() {
 }
 
 void FakeAudioCaptureModule::SetSendBuffer(int value) {
-  Sample* buffer_ptr = reinterpret_cast<Sample*>(send_buffer_);
+  auto buffer_ptr = reinterpret_cast<uint8_t*>(send_buffer_);
   const size_t buffer_size_in_samples =
       sizeof(send_buffer_) / kNumberBytesPerSample;
-  for (size_t i = 0; i < buffer_size_in_samples; ++i) {
-    buffer_ptr[i] = value;
+  uint8_t beepData[]={0xDA,0x1F,0xFF,0xF8,0xB3,0xAE,0xEE,0x2E,0x23,0xBB,0xB9,0xA2,0x22,
+                     0x1F,0x10,0x40,0x01,0x80,0x00,0x1E,0xF1,0xC1,0xE7,0xF1,0x80,0xF0,
+                     0xFC,0x00,0x04,0xFE,0x06,0x7C,0x03,0x00,0x2F,0xF9,0x2B,0x92,0x49,
+                     0x03,0x45,0x0E,0x0C,0x8D,0x55,0x8F,0x24,0x75,0xAF,0x72,0x32,0xA2,
+                     0x8D,0xF7,0x64,0x93,0xA5,0x4C,0xE3,0x48,0xB3,0x7D,0x33,0xF8,0x61,
+                     0x6E,0xE3,0x0A,0x69,0xEF,0x56,0x53,0x4D,0x53,0x32,0x06,0x56,0xE6,
+                     0x32,0x0};
+  for (size_t i = 0; i < sizeof(beepData); ++i) {
+    buffer_ptr[i] = beepData[i];
   }
 }
 

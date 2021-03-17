@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
+#include "ffmpgDecoder.h"
 
 using json = nlohmann::json;
 
@@ -23,12 +24,16 @@ int main(int /*argc*/, char* /*argv*/[])
 	signal(SIGINT, signalHandler);
 
 	// Retrieve configuration from environment variables.
-	const char* envServerUrl    = std::getenv("SERVER_URL");
-	const char* envRoomId       = std::getenv("ROOM_ID");
+	const char* envServerUrl = "https://v3demo.mediasoup.org:4443"; // std::getenv("SERVER_URL");
+	const char* envRoomId       = "pwizsawa";                      // std::getenv("ROOM_ID");
 	const char* envEnableAudio  = std::getenv("ENABLE_AUDIO");
 	const char* envUseSimulcast = std::getenv("USE_SIMULCAST");
-	const char* envWebrtcDebug  = std::getenv("WEBRTC_DEBUG");
-	const char* envVerifySsl    = std::getenv("VERIFY_SSL");
+	const char* envWebrtcDebug  = "info";	//std::getenv("WEBRTC_DEBUG");
+    const char* envVerifySsl    = "false";
+
+//    DecoderMp4 video("/home/admini/Downloads/1.mp4");
+//    auto frame=video.getNextFrame();
+    //frame.to
 
 	if (envServerUrl == nullptr)
 	{
@@ -50,7 +55,7 @@ int main(int /*argc*/, char* /*argv*/[])
 	bool enableAudio = true;
 
 	if (envEnableAudio && std::string(envEnableAudio) == "false")
-		enableAudio = false;
+		enableAudio = true;
 
 	bool useSimulcast = true;
 

@@ -69,6 +69,9 @@ target_sources(${PROJECT_NAME} PRIVATE
 	src/Broadcaster.cpp
 	src/main.cpp
 	src/MediaStreamTrackFactory.cpp
+        src/ffmpgDecoder.cpp
+        src/test_audio_device.cc
+        #src/AudioDeviceImpl.cpp
 )
 
 # Private (implementation) header files.
@@ -82,6 +85,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 	${mediasoupclient_SOURCE_DIR}/include
 	${cpr_SOURCE_DIR}/include
 	"${PROJECT_SOURCE_DIR}/deps/libwebrtc"
+        "/usr/include/opencv4/"
 )
 
 # Public (interface) dependencies.
@@ -90,5 +94,18 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
 	cpr
 	mediasoupclient
 	webrtc_broadcaster
+        avformat
+        avutil
+        swscale
+        avcodec
+        avdevice
+        avfilter
+        boost_system
+        opencv_videoio
+        opencv_core
+        opencv_shape
+        opencv_highgui
+        opencv_imgproc
+        opencv_imgcodecs
 )
 

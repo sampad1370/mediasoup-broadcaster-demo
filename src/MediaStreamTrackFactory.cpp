@@ -13,6 +13,9 @@
 #include "api/create_peerconnection_factory.h"
 #include "api/video_codecs/builtin_video_decoder_factory.h"
 #include "api/video_codecs/builtin_video_encoder_factory.h"
+#include "api/task_queue/default_task_queue_factory.h"
+#include "modules/audio_mixer/audio_mixer_impl.h"
+#include "test_audio_device.h"
 
 using namespace mediasoupclient;
 
@@ -42,10 +45,26 @@ static void createFactory()
 
 	webrtc::PeerConnectionInterface::RTCConfiguration config;
 
-	auto fakeAudioCaptureModule = FakeAudioCaptureModule::Create();
+	auto defaultQueueFActory=webrtc::CreateDefaultTaskQueueFactory();
+
+	auto fakeAudioCaptureModule = webrtc::TestAudioDeviceModule::Create(defaultQueueFActory.get(),
+																																			webrtc::TestAudioDeviceModule::CreatePulsedNoiseCapturer(10000, 48000),
+																																			webrtc::TestAudioDeviceModule::CreateDiscardRenderer(48000), 1.f);
 	if (!fakeAudioCaptureModule)
 	{
 		MSC_THROW_INVALID_STATE_ERROR("audio capture module creation errored");
+	}
+	else
+	{
+		//webrtc::AudioState::Config audio_state_config;
+		//audio_state_config.audio_mixer = ;
+		//audio_state_config.audio_processing = ;
+		//audio_state_config.audio_device_module = fakeAudioCaptureModule;
+//		send_call_config->audio_state = webrtc::AudioState::Create(audio_state_config);
+//		recv_call_config->audio_state = webrtc::AudioState::Create(audio_state_config);
+		//fakeAudioCaptureModule->Init();
+//		RTC_CHECK(fakeAudioCaptureModule->RegisterAudioCallback(
+//		            send_call_config->audio_state->audio_transport()) == 0);
 	}
 
 	factory = webrtc::CreatePeerConnectionFactory(
@@ -57,13 +76,24 @@ static void createFactory()
 	  webrtc::CreateBuiltinAudioDecoderFactory(),
 	  webrtc::CreateBuiltinVideoEncoderFactory(),
 	  webrtc::CreateBuiltinVideoDecoderFactory(),
-	  nullptr /*audio_mixer*/,
-	  nullptr /*audio_processing*/);
+		nullptr,nullptr//webrtc::AudioMixerImpl::Create() /*audio_mixer*/,
+		/*webrtc::AudioProcessingBuilder().Create()*/ /*audio_processing*/);
 
 	if (!factory)
 	{
 		MSC_THROW_ERROR("error ocurred creating peerconnection factory");
 	}
+
+	//fakeAudioCaptureModule->Init();
+//	auto numDevice=fakeAudioCaptureModule->RecordingDevices();
+//	fakeAudioCaptureModule->InitPlayout();
+//	fakeAudioCaptureModule->InitRecording();
+//	fakeAudioCaptureModule->InitSpeaker();
+//	fakeAudioCaptureModule->SetMicrophoneVolume(100);
+//	fakeAudioCaptureModule->SetSpeakerVolume(100);
+//	fakeAudioCaptureModule->SetSpeakerMute(false);
+//	fakeAudioCaptureModule->StartPlayout();
+//	fakeAudioCaptureModule->StartRecording();
 }
 
 // Audio track creation.

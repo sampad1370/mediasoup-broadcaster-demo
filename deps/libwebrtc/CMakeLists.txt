@@ -9,7 +9,7 @@ set(SOURCE_FILES
 	test/test_video_capturer.cc
 	test/testsupport/ivf_video_frame_generator.cc
 	test/testsupport/file_utils.cc
-	test/testsupport/file_utils_override.cc
+        test/testsupport/file_utils_override.cc
 )
 
 if(APPLE)
@@ -29,6 +29,8 @@ target_include_directories(webrtc_broadcaster PRIVATE ${PROJECT_SOURCE_DIR}/deps
 target_include_directories(webrtc_broadcaster PUBLIC
 	"${LIBWEBRTC_INCLUDE_PATH}"
 	"${LIBWEBRTC_INCLUDE_PATH}/third_party/abseil-cpp"
+        "/usr/include/opencv4/"
+        "${LIBWEBRTC_INCLUDE_PATH}/third_party/libyuv/include/"
 )
 
 # Compile definitions for libwebrtc.

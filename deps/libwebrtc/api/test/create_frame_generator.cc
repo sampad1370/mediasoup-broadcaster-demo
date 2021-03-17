@@ -27,7 +27,7 @@ std::unique_ptr<FrameGeneratorInterface> CreateSquareFrameGenerator(
     absl::optional<int> num_squares) {
   return std::make_unique<SquareGenerator>(
       width, height, type.value_or(FrameGeneratorInterface::OutputType::kI420),
-      num_squares.value_or(10));
+      num_squares.value_or(1));
 }
 
 std::unique_ptr<FrameGeneratorInterface> CreateFromYuvFileFrameGenerator(

@@ -451,11 +451,11 @@ void Broadcaster::CreateSendTransport(bool enableAudio, bool useSimulcast)
 			encodings.emplace_back(webrtc::RtpEncodingParameters());
 			encodings.emplace_back(webrtc::RtpEncodingParameters());
 
-			this->sendTransport->Produce(this, videoTrack, &encodings, nullptr);
+            this->sendTransport->Produce(this, videoTrack, &encodings, nullptr);
 		}
 		else
 		{
-			this->sendTransport->Produce(this, videoTrack, nullptr, nullptr);
+						this->sendTransport->Produce(this, videoTrack, nullptr, nullptr);
 		}
 	}
 	else

@@ -1,0 +1,1827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QtCreatorProject>
+<!-- Written by QtCreator 4.14.1, 2021-03-17T09:44:00. -->
+<qtcreator>
+ <data>
+  <variable>EnvironmentId</variable>
+  <value type="QByteArray">{dfa9b9ab-4df4-4e82-97e5-f07016bc8e9e}</value>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.ActiveTarget</variable>
+  <value type="int">0</value>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.EditorSettings</variable>
+  <valuemap type="QVariantMap">
+   <value type="bool" key="EditorConfiguration.AutoIndent">true</value>
+   <value type="bool" key="EditorConfiguration.AutoSpacesForTabs">false</value>
+   <value type="bool" key="EditorConfiguration.CamelCaseNavigation">true</value>
+   <valuemap type="QVariantMap" key="EditorConfiguration.CodeStyle.0">
+    <value type="QString" key="language">Cpp</value>
+    <valuemap type="QVariantMap" key="value">
+     <value type="QByteArray" key="CurrentPreferences">CppGlobal</value>
+    </valuemap>
+   </valuemap>
+   <valuemap type="QVariantMap" key="EditorConfiguration.CodeStyle.1">
+    <value type="QString" key="language">QmlJS</value>
+    <valuemap type="QVariantMap" key="value">
+     <value type="QByteArray" key="CurrentPreferences">QmlJSGlobal</value>
+    </valuemap>
+   </valuemap>
+   <value type="int" key="EditorConfiguration.CodeStyle.Count">2</value>
+   <value type="QByteArray" key="EditorConfiguration.Codec">UTF-8</value>
+   <value type="bool" key="EditorConfiguration.ConstrainTooltips">false</value>
+   <value type="int" key="EditorConfiguration.IndentSize">4</value>
+   <value type="bool" key="EditorConfiguration.KeyboardTooltips">false</value>
+   <value type="int" key="EditorConfiguration.MarginColumn">80</value>
+   <value type="bool" key="EditorConfiguration.MouseHiding">true</value>
+   <value type="bool" key="EditorConfiguration.MouseNavigation">true</value>
+   <value type="int" key="EditorConfiguration.PaddingMode">1</value>
+   <value type="bool" key="EditorConfiguration.ScrollWheelZooming">true</value>
+   <value type="bool" key="EditorConfiguration.ShowMargin">false</value>
+   <value type="int" key="EditorConfiguration.SmartBackspaceBehavior">0</value>
+   <value type="bool" key="EditorConfiguration.SmartSelectionChanging">true</value>
+   <value type="bool" key="EditorConfiguration.SpacesForTabs">true</value>
+   <value type="int" key="EditorConfiguration.TabKeyBehavior">0</value>
+   <value type="int" key="EditorConfiguration.TabSize">8</value>
+   <value type="bool" key="EditorConfiguration.UseGlobal">true</value>
+   <value type="int" key="EditorConfiguration.Utf8BomBehavior">1</value>
+   <value type="bool" key="EditorConfiguration.addFinalNewLine">true</value>
+   <value type="bool" key="EditorConfiguration.cleanIndentation">true</value>
+   <value type="bool" key="EditorConfiguration.cleanWhitespace">true</value>
+   <value type="QString" key="EditorConfiguration.ignoreFileTypes">*.md, *.MD, Makefile</value>
+   <value type="bool" key="EditorConfiguration.inEntireDocument">false</value>
+   <value type="bool" key="EditorConfiguration.skipTrailingWhitespace">true</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.PluginSettings</variable>
+  <valuemap type="QVariantMap">
+   <valuemap type="QVariantMap" key="AutoTest.ActiveFrameworks">
+    <value type="bool" key="AutoTest.Framework.Boost">true</value>
+    <value type="bool" key="AutoTest.Framework.Catch">true</value>
+    <value type="bool" key="AutoTest.Framework.GTest">true</value>
+    <value type="bool" key="AutoTest.Framework.QtQuickTest">true</value>
+    <value type="bool" key="AutoTest.Framework.QtTest">true</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="AutoTest.CheckStates">
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/alternating_tests.cpp:AlternatingTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/alternating_tests.cpp:HeadGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/alternating_tests.cpp:PutGetPutGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/alternating_tests.cpp:PutGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/alternating_tests.cpp:PutHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/alternating_tests.cpp:PutPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/async_tests.cpp:AsyncGetMultipleReflectTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/async_tests.cpp:AsyncGetMultipleTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/async_tests.cpp:AsyncGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/async_tests.cpp:UrlEncodedPostTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackDeleteFunctionStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackDeleteFunctionStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackDeleteFunctionTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackDeleteFunctionTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackDeleteLambdaStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackDeleteLambdaStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackDeleteLambdaTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackDeleteLambdaTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackDeleteTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackGetFunctionStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackGetFunctionStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackGetFunctionTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackGetFunctionTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackGetLambdaStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackGetLambdaStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackGetLambdaTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackGetLambdaTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackGetTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackHeadFunctionStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackHeadFunctionStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackHeadFunctionTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackHeadFunctionTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackHeadLambdaStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackHeadLambdaStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackHeadLambdaTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackHeadLambdaTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackHeadTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackOptionsFunctionStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackOptionsFunctionStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackOptionsFunctionTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackOptionsFunctionTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackOptionsLambdaStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackOptionsLambdaStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackOptionsLambdaTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackOptionsLambdaTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackOptionsTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPatchFunctionStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPatchFunctionStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPatchFunctionTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPatchFunctionTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPatchLambdaStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPatchLambdaStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPatchLambdaTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPatchLambdaTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPatchTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPostFunctionStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPostFunctionStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPostFunctionTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPostFunctionTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPostLambdaStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPostLambdaStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPostLambdaTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPostLambdaTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPostTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPutFunctionStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPutFunctionStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPutFunctionTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPutFunctionTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPutLambdaStatusReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPutLambdaStatusTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPutLambdaTextReferenceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPutLambdaTextTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/callback_tests.cpp:CallbackPutTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:AsyncDeleteTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:AsyncDeleteUnallowedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:AsyncMultipleDeleteTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:AsyncMultipleDeleteUnallowedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:DeleteJsonBodyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:DeleteTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:DeleteTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:DeleteUnallowedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:SessionDeleteAfterGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:SessionDeleteAfterHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:SessionDeleteAfterPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:SessionDeleteJsonBodyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:SessionDeleteTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:SessionDeleteUnallowedAfterGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:SessionDeleteUnallowedAfterHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:SessionDeleteUnallowedAfterPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/delete_tests.cpp:SessionDeleteUnallowedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:BasicSSLFailure">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:BoolFalseTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:BoolTrueTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:ChronoConnectTimeoutFailure">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:ChronoTimeoutFailure">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:ConnectTimeoutFailure">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:ErrorTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:InvalidURLFailure">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:LowSpeedBytesFailure">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:LowSpeedTimeFailure">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:ProxyFailure">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:TimeoutFailure">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/error_tests.cpp:UnsupportedProtocolFailure">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BadHostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAthenticationParameterTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationFailureMultipleParametersTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationFailureSingleParameterTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationFailureTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationHeaderTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationNullFailureTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderAATest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderABTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderACTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderADTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderAETest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderAFTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderAGTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderAHTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderBATest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderBBTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderBCTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderBDTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderBETest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderBFTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderBGTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderBHTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderCATest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderCBTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderCCTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderCDTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderCETest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderCFTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderCGTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderCHTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderDATest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderDBTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderDCTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderDDTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderDETest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderDFTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderDGTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderDHTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderEATest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderEBTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderECTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderEDTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderEETest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderEFTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderEGTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderEHTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderFATest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderFBTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderFCTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderFDTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderFETest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderFFTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderFGTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderFHTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterHeaderTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationParameterTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationSuccessMultipleHeadersReverseTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationSuccessMultipleHeadersTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationSuccessMultipleParametersReverseTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationSuccessMultipleParametersTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationSuccessSingleHeaderReverseTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationSuccessSingleHeaderTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationSuccessSingleParameterReverseTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationSuccessSingleParameterTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationSuccessTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicAuthenticationTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicDigestSuccessTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicJsonTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:BasicTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:CheckBasicCookieTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:CheckV1CookieTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:CookiesTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:GetRedirectTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderJsonTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectCaseInsensitiveParametersReverseTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectCaseInsensitiveParametersTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectCaseInsensitiveTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectEmptyParametersReverseTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectEmptyParametersTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectEmptyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectMultipleParametersReverseTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectMultipleParametersTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectMultipleTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectNoneParametersTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectNoneTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectSingleParametersReverseTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectSingleParametersTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderReflectSingleTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HeaderTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:HelloWorldTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:MultipleDynamicParametersTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:MultipleParametersTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:ParameterHeaderTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:ParameterTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:RedirectTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:RequestBodyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:ResourceNotFoundTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:SetEmptyHeaderTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:SingleCookieTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:SingleParameterOnlyKeyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:SingleParameterTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:TimeoutTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:V1CookieTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/get_tests.cpp:ZeroMaxRedirectsTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:AuthenticationFailureHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:AuthenticationNullFailureHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:AuthenticationSuccessHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:BadHostHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:BasicHeadAsyncTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:BasicHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:ComplexHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:CookieHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:DISABLED_DigestSuccessHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:HeadTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:HeaderReflectEmptyHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:HeaderReflectHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:HeaderReflectNoneHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:ParameterHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:RedirectHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:ResourceNotFoundHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:SetEmptyHeaderHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/head_tests.cpp:ZeroMaxRedirectsHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/options_tests.cpp:AsyncBaseUrlTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/options_tests.cpp:AsyncSpecificUrlTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/options_tests.cpp:BaseUrlTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/options_tests.cpp:OptionsTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/options_tests.cpp:SpecificUrlTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:AsyncMultiplePatchTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:AsyncMultiplePatchUnallowedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:AsyncPatchTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:AsyncPatchUnallowedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:PatchTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:PatchTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:PatchUnallowedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:SessionPatchAfterGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:SessionPatchAfterHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:SessionPatchAfterPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:SessionPatchTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:SessionPatchUnallowedAfterGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:SessionPatchUnallowedAfterHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:SessionPatchUnallowedAfterPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/patch_tests.cpp:SessionPatchUnallowedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostContentTypeLValueTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostContentTypeTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostFileBufferArrayTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostFileBufferNoCopyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostFileBufferPointerTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostFileBufferStdArrayTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostFileBufferTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostFileBufferVectorTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostFileNoCopyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostFileTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostManyNoCopyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostManyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:FormPostSingleTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:PostWithNoBodyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:UrlPostAddPayloadPair">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:UrlPostAsyncSingleTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:UrlPostBadHostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:UrlPostEncodeNoCopyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:UrlPostEncodeTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:UrlPostManyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:UrlPostPayloadIteratorTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:UrlPostSingleTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/post_tests.cpp:UrlReflectTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/proxy_tests.cpp:CopyProxyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/proxy_tests.cpp:MultipleProxyHttpTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/proxy_tests.cpp:ProxySessionTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/proxy_tests.cpp:ProxyTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/proxy_tests.cpp:ReferenceProxySessionTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/proxy_tests.cpp:SingleProxyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:AsyncMultiplePutTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:AsyncMultiplePutUnallowedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:AsyncPutTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:AsyncPutUnallowedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:PutTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:PutTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:PutUnallowedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:SessionPutAfterGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:SessionPutAfterHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:SessionPutAfterPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:SessionPutTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:SessionPutUnallowedAfterGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:SessionPutUnallowedAfterHeadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:SessionPutUnallowedAfterPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/put_tests.cpp:SessionPutUnallowedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/raw_body_tests.cpp:BodyPostTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/raw_body_tests.cpp:CustomHeaderNumberPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/raw_body_tests.cpp:CustomHeaderTextPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/raw_body_tests.cpp:CustomWrongHeaderPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/raw_body_tests.cpp:DefaultUrlEncodedPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/raw_body_tests.cpp:StringMoveBodyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/raw_body_tests.cpp:TextUrlEncodedNoCopyPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/raw_body_tests.cpp:TextUrlEncodedPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/raw_body_tests.cpp:UrlEncodedManyPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/raw_body_tests.cpp:UrlPostBadHostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:BasicAuthenticationChangeMultipleGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:BasicAuthenticationMultipleGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:BasicCookiesTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:BasicMultipleGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:BodyTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:ConnectTimeoutTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:CookiesConstructorTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:DifferentMethodTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:DigestTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:GetPostGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:GetPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:HeaderChangeMultipleGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:HeaderMultipleGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:LowSpeedTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:MaxRedirectsTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:MultipartTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:MultipleGetPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:MultipleGetTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:NoPermanentRedirectTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:NoTemporaryRedirectTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:OneMaxRedirectsFailureTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:OneMaxRedirectsSuccessTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:ParameterChangeMultipleGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:ParameterMultipleGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:ParameterMultipleTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:ParameterSingleTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:PayloadTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:PermanentDefaultRedirectTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:PostGetPostTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:PostGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:RedirectTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetBodyTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetBodyValueTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetChronoConnectTimeoutLongTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetChronoConnectTimeoutTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetChronoTimeoutLongTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetChronoTimeoutTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetConnectTimeoutLongTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetConnectTimeoutTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetDigestTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetLowSpeedTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetMultipartTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetMultipartValueTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetPayloadLValueTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetPayloadTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetTimeoutLongTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetTimeoutTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:SetUserAgentTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:TemporaryDefaultRedirectTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:TimeoutTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:TwoMaxRedirectsSuccessTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:UrlChangeMultipleGetTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:UserAgentTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:ZeroMaxRedirectsFailureTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/session_tests.cpp:ZeroMaxRedirectsSuccessTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/util_tests.cpp:BasicParseTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/util_tests.cpp:BasicStatusLineTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/util_tests.cpp:CarriageReturnNewlineTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/util_tests.cpp:NewlineStatusLineTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/util_tests.cpp:NewlineTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/util_tests.cpp:NoReasonSpaceTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/util_tests.cpp:NoReasonTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/util_tests.cpp:SpaceCarriageReturnNewlineTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/util_tests.cpp:SpaceNewlineTest">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/cpr-src/test/util_tests.cpp:UtilParseHeaderTests">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: aes67">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: alacSdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: extmapEncryptSdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: hackySdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: iceliteSdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: invalidSdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: jsepSdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: jssipSdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: multicastttlSdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: normalSdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: onvifSdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: simulcastSdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: ssrcSdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: st2022-6Sdp">Checked</value>
+    <value type="Qt::CheckState" key="/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-src/deps/libsdptransform/test/parse.test.cpp:Scenario: st2110-20Sdp">Checked</value>
+   </valuemap>
+   <value type="int" key="AutoTest.RunAfterBuild">0</value>
+   <value type="bool" key="AutoTest.UseGlobal">true</value>
+   <valuelist type="QVariantList" key="ClangCodeModel.CustomCommandLineKey"/>
+   <value type="bool" key="ClangCodeModel.UseGlobalConfig">true</value>
+   <value type="QString" key="ClangCodeModel.WarningConfigId">Builtin.Questionable</value>
+   <valuemap type="QVariantMap" key="ClangTools">
+    <value type="bool" key="ClangTools.AnalyzeOpenFiles">true</value>
+    <value type="bool" key="ClangTools.BuildBeforeAnalysis">true</value>
+    <value type="QString" key="ClangTools.DiagnosticConfig">Builtin.DefaultTidyAndClazy</value>
+    <value type="int" key="ClangTools.ParallelJobs">2</value>
+    <valuelist type="QVariantList" key="ClangTools.SelectedDirs"/>
+    <valuelist type="QVariantList" key="ClangTools.SelectedFiles"/>
+    <valuelist type="QVariantList" key="ClangTools.SuppressedDiagnostics"/>
+    <value type="bool" key="ClangTools.UseGlobalSettings">true</value>
+   </valuemap>
+  </valuemap>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.Target.0</variable>
+  <valuemap type="QVariantMap">
+   <value type="QString" key="DeviceType">Desktop</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{31f795e4-5533-41be-9fdd-6d75c0c982d1}</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">2</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
+    <value type="QString" key="CMake.Initial.Parameters">-GUnix Makefiles
+-DCMAKE_BUILD_TYPE:String=Build
+-DQT_QMAKE_EXECUTABLE:STRING=%{Qt:qmakeExecutable}
+-DCMAKE_PREFIX_PATH:STRING=%{Qt:QT_INSTALL_PREFIX}
+-DCMAKE_C_COMPILER:STRING=%{Compiler:Executable:C}
+-DCMAKE_CXX_COMPILER:STRING=%{Compiler:Executable:Cxx}</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/admini/Documents/mediasoup-build</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">all</value>
+      </valuelist>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">clean</value>
+      </valuelist>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
+     </valuemap>
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">1</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">0</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Deploy</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.DeployConfiguration.CustomData"/>
+    <value type="bool" key="ProjectExplorer.DeployConfiguration.CustomDataEnabled">false</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.DefaultDeployConfiguration</value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">alternating_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.alternating_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">alternating_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">async_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.async_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">async_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.10">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">post_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.post_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">post_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.11">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">proxy_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.proxy_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">proxy_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.12">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">put_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.put_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">put_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.13">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">raw_body_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.raw_body_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">raw_body_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.14">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">sdptransform_readme_helper</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.sdptransform_readme_helper</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">sdptransform_readme_helper</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-build/libsdptransform/readme-helper</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.15">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">session_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.session_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">session_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.16">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">test_sdptransform</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.test_sdptransform</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">test_sdptransform</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/_deps/mediasoupclient-build/libsdptransform/test</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.17">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">util_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.util_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">util_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.2">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">broadcaster</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.broadcaster</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">broadcaster</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.3">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">callback_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.callback_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">callback_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.4">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">delete_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.delete_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">delete_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.5">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">error_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.error_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">error_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.6">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">get_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.get_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">get_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.7">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">head_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.head_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">head_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.8">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">options_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.options_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">options_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.9">
+    <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.Events">
+     <value type="QString">cpu-cycles</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="Analyzer.Perf.ExtraArguments"/>
+    <value type="int" key="Analyzer.Perf.Frequency">250</value>
+    <valuelist type="QVariantList" key="Analyzer.Perf.RecordArguments">
+     <value type="QString">-e</value>
+     <value type="QString">cpu-cycles</value>
+     <value type="QString">--call-graph</value>
+     <value type="QString">dwarf,4096</value>
+     <value type="QString">-F</value>
+     <value type="QString">250</value>
+    </valuelist>
+    <value type="QString" key="Analyzer.Perf.SampleMode">-F</value>
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Perf.StackSize">4096</value>
+    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
+    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
+    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
+    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
+    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
+    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
+    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
+    <value type="QString" key="Analyzer.Valgrind.KCachegrindExecutable">kcachegrind</value>
+    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
+    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
+    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
+    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
+    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
+     <value type="int">0</value>
+     <value type="int">1</value>
+     <value type="int">2</value>
+     <value type="int">3</value>
+     <value type="int">4</value>
+     <value type="int">5</value>
+     <value type="int">6</value>
+     <value type="int">7</value>
+     <value type="int">8</value>
+     <value type="int">9</value>
+     <value type="int">10</value>
+     <value type="int">11</value>
+     <value type="int">12</value>
+     <value type="int">13</value>
+     <value type="int">14</value>
+    </valuelist>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">patch_tests</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.patch_tests</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">patch_tests</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/admini/Documents/mediasoup-build/bin</value>
+   </valuemap>
+   <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">18</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.TargetCount</variable>
+  <value type="int">1</value>
+ </data>
+ <data>
+  <variable>ProjectExplorer.Project.Updater.FileVersion</variable>
+  <value type="int">22</value>
+ </data>
+ <data>
+  <variable>Version</variable>
+  <value type="int">22</value>
+ </data>
+</qtcreator>

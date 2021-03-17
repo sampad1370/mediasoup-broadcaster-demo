@@ -23,6 +23,8 @@
 #include "rtc_base/checks.h"
 #include "rtc_base/keep_ref_until_done.h"
 #include "test/frame_utils.h"
+#include "third_party/libyuv/include/libyuv.h"
+#include "third_party/libyuv/include/libyuv/video_common.h"
 
 namespace webrtc {
 namespace test {
@@ -39,66 +41,145 @@ SquareGenerator::SquareGenerator(int width,
                                  OutputType type,
                                  int num_squares)
     : type_(type) {
-  ChangeResolution(width, height);
-  for (int i = 0; i < num_squares; ++i) {
-    squares_.emplace_back(new Square(width, height, i + 1));
-  }
+    ChangeResolution(width, height);
+    m_video=new DecoderMp4("/home/admini/Downloads/1.mp4");
+    for (int i = 0; i < num_squares; ++i) {
+        squares_.emplace_back(new Square(width, height, i + 1));
+    }
 }
 
 void SquareGenerator::ChangeResolution(size_t width, size_t height) {
-  rtc::CritScope lock(&crit_);
-  width_ = static_cast<int>(width);
-  height_ = static_cast<int>(height);
-  RTC_CHECK(width_ > 0);
-  RTC_CHECK(height_ > 0);
+    rtc::CritScope lock(&crit_);
+    width_ = static_cast<int>(width);
+    height_ = static_cast<int>(height);
+    RTC_CHECK(width_ > 0);
+    RTC_CHECK(height_ > 0);
 }
 
 rtc::scoped_refptr<I420Buffer> SquareGenerator::CreateI420Buffer(int width,
                                                                  int height) {
-  rtc::scoped_refptr<I420Buffer> buffer(I420Buffer::Create(width, height));
-  memset(buffer->MutableDataY(), 127, height * buffer->StrideY());
-  memset(buffer->MutableDataU(), 127,
-         buffer->ChromaHeight() * buffer->StrideU());
-  memset(buffer->MutableDataV(), 127,
-         buffer->ChromaHeight() * buffer->StrideV());
-  return buffer;
+    rtc::scoped_refptr<I420Buffer> buffer(I420Buffer::Create(width, height));
+    memset(buffer->MutableDataY(), 127, height * buffer->StrideY());
+    memset(buffer->MutableDataU(), 127,
+           buffer->ChromaHeight() * buffer->StrideU());
+    memset(buffer->MutableDataV(), 127,
+           buffer->ChromaHeight() * buffer->StrideV());
+    return buffer;
+}
+
+enum VideoRotationMode {
+    kRotateNone = 0,
+    kRotate90 = 90,
+    kRotate180 = 180,
+    kRotate270 = 270,
+};
+
+libyuv::RotationMode ConvertRotationMode(VideoRotationMode rotation) {
+    switch(rotation) {
+    case kRotateNone:
+        return libyuv::kRotate0;
+    case kRotate90:
+        return libyuv::kRotate90;
+    case kRotate180:
+        return libyuv::kRotate180;
+    case kRotate270:
+        return libyuv::kRotate270;
+    }
+    assert(false);
+    return libyuv::kRotate0;
+}
+
+int ConvertToI420(int src_video_type,
+                  const uint8_t* src_frame,
+                  int crop_x, int crop_y,
+                  int src_width, int src_height,
+                  int sample_size,
+                  VideoRotationMode rotation,
+                  VideoFrameBuffer* dst_frame) {
+    // All sanity tests are conducted within LibYuv.
+    int dst_height = dst_frame->height();
+    int dst_width = dst_frame->width();
+    // TODO(mikhal): When available, use actual stride value.
+    int dst_stride = dst_frame->width();
+    int half_dst_width = (dst_width + 1) >> 1;
+    int half_dst_height = (dst_height + 1) >> 1;
+    uint8_t* dst_yplane = (uint8_t*)dst_frame->GetI420()->DataY();
+    uint8_t* dst_uplane = dst_yplane + dst_width * dst_height;
+    uint8_t* dst_vplane = dst_uplane + half_dst_width * half_dst_height;
+    return libyuv::ConvertToI420(src_frame, sample_size,
+                                 dst_yplane, dst_stride,
+                                 dst_uplane, (dst_stride + 1) / 2,
+                                 dst_vplane, (dst_stride + 1) / 2,
+                                 crop_x, crop_y,
+                                 src_width, src_height,
+                                 dst_width, dst_height,
+                                 ConvertRotationMode(rotation),
+                                 src_video_type);
 }
 
 FrameGeneratorInterface::VideoFrameData SquareGenerator::NextFrame() {
-  rtc::CritScope lock(&crit_);
+    rtc::CritScope lock(&crit_);
 
-  rtc::scoped_refptr<VideoFrameBuffer> buffer = nullptr;
-  switch (type_) {
+    rtc::scoped_refptr<VideoFrameBuffer> buffer = nullptr;
+    switch (type_) {
     case OutputType::kI420:
     case OutputType::kI010: {
-      buffer = CreateI420Buffer(width_, height_);
-      break;
+        buffer = CreateI420Buffer(width_, height_);
+        break;
     }
     case OutputType::kI420A: {
-      rtc::scoped_refptr<I420Buffer> yuv_buffer =
-          CreateI420Buffer(width_, height_);
-      rtc::scoped_refptr<I420Buffer> axx_buffer =
-          CreateI420Buffer(width_, height_);
-      buffer = WrapI420ABuffer(
-          yuv_buffer->width(), yuv_buffer->height(), yuv_buffer->DataY(),
-          yuv_buffer->StrideY(), yuv_buffer->DataU(), yuv_buffer->StrideU(),
-          yuv_buffer->DataV(), yuv_buffer->StrideV(), axx_buffer->DataY(),
-          axx_buffer->StrideY(),
-          rtc::Bind(&KeepBufferRefs, yuv_buffer, axx_buffer));
-      break;
+        rtc::scoped_refptr<I420Buffer> yuv_buffer =
+                CreateI420Buffer(width_, height_);
+        rtc::scoped_refptr<I420Buffer> axx_buffer =
+                CreateI420Buffer(width_, height_);
+        buffer = WrapI420ABuffer(
+                    yuv_buffer->width(), yuv_buffer->height(), yuv_buffer->DataY(),
+                    yuv_buffer->StrideY(), yuv_buffer->DataU(), yuv_buffer->StrideU(),
+                    yuv_buffer->DataV(), yuv_buffer->StrideV(), axx_buffer->DataY(),
+                    axx_buffer->StrideY(),
+                    rtc::Bind(&KeepBufferRefs, yuv_buffer, axx_buffer));
+        break;
     }
     default:
-      RTC_NOTREACHED() << "The given output format is not supported.";
-  }
+        RTC_NOTREACHED() << "The given output format is not supported.";
+    }
 
-  for (const auto& square : squares_)
-    square->Draw(buffer);
+    auto finalFrame=m_video->getNextFrame();
+//    rtc::scoped_refptr<I420BufferInterface> pBuffer = buffer->ToI420();
 
-  if (type_ == OutputType::kI010) {
-    buffer = I010Buffer::Copy(*buffer->ToI420());
-  }
+//    //cv::Mat bgra(frame.rows, frame.cols, CV_8UC4);
+//    //cv::cvtColor(frame, bgra, CV_BGR2BGRA); //opencv reads the stream in BGR format by default
+//    cv::Mat bgra(frame.rows, frame.cols, CV_8UC4);
+//    //opencv reads the stream in BGR format by default
+//    cv::cvtColor(frame, bgra, CV_BGR2BGRA);
 
-  return VideoFrameData(buffer, absl::nullopt);
+    {
+        //auto finalFrame=frame;
+        //cv::imwrite("/home/admini/Downloads/test.bmp", finalFrame);
+
+        auto buffer2 = CreateI420Buffer(finalFrame.cols, finalFrame.rows);
+
+        if(0 != ConvertToI420(libyuv::FOURCC_BGR3,
+                              (uint8_t*)finalFrame.ptr(), 0, 0,
+                              finalFrame.cols, finalFrame.rows,
+                              0, VideoRotationMode::kRotateNone, buffer2.get()) )
+        {
+            std::cout << "Failed to convert frame to i420" << std::endl;
+        }
+
+        //    rtc::scoped_refptr<webrtc::I420Buffer> buffer2 = webrtc::I420Buffer::Copy(
+        //                frame.rows, frame.cols,
+        //                (uint8_t*)yuv.data, yuv.cols,
+        //                (uint8_t*)yuv.data + yuv.rows*yuv.cols/2, yuv.cols/2,
+        //                (uint8_t*)yuv.data + yuv.rows*yuv.cols/2 + ((yuv.rows)*(yuv.cols/2)), yuv.cols/2);
+        //    //    for (const auto& square : squares_)
+        //        square->Draw(buffer);
+
+
+        buffer = I420Buffer::Copy(*buffer2);
+    }
+
+    return VideoFrameData(buffer, absl::nullopt);
 }
 
 SquareGenerator::Square::Square(int width, int height, int seed)
@@ -109,42 +190,44 @@ SquareGenerator::Square::Square(int width, int height, int seed)
       yuv_y_(random_generator_.Rand(0, 255)),
       yuv_u_(random_generator_.Rand(0, 255)),
       yuv_v_(random_generator_.Rand(0, 255)),
-      yuv_a_(random_generator_.Rand(0, 255)) {}
+      yuv_a_(random_generator_.Rand(0, 255))
+{
+}
 
 void SquareGenerator::Square::Draw(
-    const rtc::scoped_refptr<VideoFrameBuffer>& frame_buffer) {
-  RTC_DCHECK(frame_buffer->type() == VideoFrameBuffer::Type::kI420 ||
-             frame_buffer->type() == VideoFrameBuffer::Type::kI420A);
-  rtc::scoped_refptr<I420BufferInterface> buffer = frame_buffer->ToI420();
-  int length_cap = std::min(buffer->height(), buffer->width()) / 4;
-  int length = std::min(length_, length_cap);
-  x_ = (x_ + random_generator_.Rand(0, 4)) % (buffer->width() - length);
-  y_ = (y_ + random_generator_.Rand(0, 4)) % (buffer->height() - length);
-  for (int y = y_; y < y_ + length; ++y) {
-    uint8_t* pos_y =
-        (const_cast<uint8_t*>(buffer->DataY()) + x_ + y * buffer->StrideY());
-    memset(pos_y, yuv_y_, length);
-  }
+        const rtc::scoped_refptr<VideoFrameBuffer>& frame_buffer) {
+    RTC_DCHECK(frame_buffer->type() == VideoFrameBuffer::Type::kI420 ||
+               frame_buffer->type() == VideoFrameBuffer::Type::kI420A);
+    rtc::scoped_refptr<I420BufferInterface> buffer = frame_buffer->ToI420();
+    int length_cap = std::min(buffer->height(), buffer->width()) / 4;
+    int length = std::min(length_, length_cap);
+    x_ = (x_ + random_generator_.Rand(0, 4)) % (buffer->width() - length);
+    y_ = (y_ + random_generator_.Rand(0, 4)) % (buffer->height() - length);
+    for (int y = y_; y < y_ + length; ++y) {
+        uint8_t* pos_y =
+                (const_cast<uint8_t*>(buffer->DataY()) + x_ + y * buffer->StrideY());
+        memset(pos_y, yuv_y_, length);
+    }
 
-  for (int y = y_; y < y_ + length; y = y + 2) {
-    uint8_t* pos_u = (const_cast<uint8_t*>(buffer->DataU()) + x_ / 2 +
-                      y / 2 * buffer->StrideU());
-    memset(pos_u, yuv_u_, length / 2);
-    uint8_t* pos_v = (const_cast<uint8_t*>(buffer->DataV()) + x_ / 2 +
-                      y / 2 * buffer->StrideV());
-    memset(pos_v, yuv_v_, length / 2);
-  }
+    for (int y = y_; y < y_ + length; y = y + 2) {
+        uint8_t* pos_u = (const_cast<uint8_t*>(buffer->DataU()) + x_ / 2 +
+                          y / 2 * buffer->StrideU());
+        memset(pos_u, yuv_u_, length / 2);
+        uint8_t* pos_v = (const_cast<uint8_t*>(buffer->DataV()) + x_ / 2 +
+                          y / 2 * buffer->StrideV());
+        memset(pos_v, yuv_v_, length / 2);
+    }
 
-  if (frame_buffer->type() == VideoFrameBuffer::Type::kI420)
-    return;
+    if (frame_buffer->type() == VideoFrameBuffer::Type::kI420)
+        return;
 
-  // Optionally draw on alpha plane if given.
-  const webrtc::I420ABufferInterface* yuva_buffer = frame_buffer->GetI420A();
-  for (int y = y_; y < y_ + length; ++y) {
-    uint8_t* pos_y = (const_cast<uint8_t*>(yuva_buffer->DataA()) + x_ +
-                      y * yuva_buffer->StrideA());
-    memset(pos_y, yuv_a_, length);
-  }
+    // Optionally draw on alpha plane if given.
+    const webrtc::I420ABufferInterface* yuva_buffer = frame_buffer->GetI420A();
+    for (int y = y_; y < y_ + length; ++y) {
+        uint8_t* pos_y = (const_cast<uint8_t*>(yuva_buffer->DataA()) + x_ +
+                          y * yuva_buffer->StrideA());
+        memset(pos_y, yuv_a_, length);
+    }
 }
 
 YuvFileGenerator::YuvFileGenerator(std::vector<FILE*> files,
@@ -162,51 +245,51 @@ YuvFileGenerator::YuvFileGenerator(std::vector<FILE*> files,
       frame_buffer_(new uint8_t[frame_size_]),
       frame_display_count_(frame_repeat_count),
       current_display_count_(0) {
-  RTC_DCHECK_GT(width, 0);
-  RTC_DCHECK_GT(height, 0);
-  RTC_DCHECK_GT(frame_repeat_count, 0);
+    RTC_DCHECK_GT(width, 0);
+    RTC_DCHECK_GT(height, 0);
+    RTC_DCHECK_GT(frame_repeat_count, 0);
 }
 
 YuvFileGenerator::~YuvFileGenerator() {
-  for (FILE* file : files_)
-    fclose(file);
+    for (FILE* file : files_)
+        fclose(file);
 }
 
 FrameGeneratorInterface::VideoFrameData YuvFileGenerator::NextFrame() {
-  // Empty update by default.
-  VideoFrame::UpdateRect update_rect{0, 0, 0, 0};
-  if (current_display_count_ == 0) {
-    const bool got_new_frame = ReadNextFrame();
-    // Full update on a new frame from file.
-    if (got_new_frame) {
-      update_rect = VideoFrame::UpdateRect{0, 0, static_cast<int>(width_),
-                                           static_cast<int>(height_)};
+    // Empty update by default.
+    VideoFrame::UpdateRect update_rect{0, 0, 0, 0};
+    if (current_display_count_ == 0) {
+        const bool got_new_frame = ReadNextFrame();
+        // Full update on a new frame from file.
+        if (got_new_frame) {
+            update_rect = VideoFrame::UpdateRect{0, 0, static_cast<int>(width_),
+                    static_cast<int>(height_)};
+        }
     }
-  }
-  if (++current_display_count_ >= frame_display_count_)
-    current_display_count_ = 0;
+    if (++current_display_count_ >= frame_display_count_)
+        current_display_count_ = 0;
 
-  return VideoFrameData(last_read_buffer_, update_rect);
+    return VideoFrameData(last_read_buffer_, update_rect);
 }
 
 bool YuvFileGenerator::ReadNextFrame() {
-  size_t prev_frame_index = frame_index_;
-  size_t prev_file_index = file_index_;
-  last_read_buffer_ = test::ReadI420Buffer(
-      static_cast<int>(width_), static_cast<int>(height_), files_[file_index_]);
-  ++frame_index_;
-  if (!last_read_buffer_) {
-    // No more frames to read in this file, rewind and move to next file.
-    rewind(files_[file_index_]);
+    size_t prev_frame_index = frame_index_;
+    size_t prev_file_index = file_index_;
+    last_read_buffer_ = test::ReadI420Buffer(
+                static_cast<int>(width_), static_cast<int>(height_), files_[file_index_]);
+    ++frame_index_;
+    if (!last_read_buffer_) {
+        // No more frames to read in this file, rewind and move to next file.
+        rewind(files_[file_index_]);
 
-    frame_index_ = 0;
-    file_index_ = (file_index_ + 1) % files_.size();
-    last_read_buffer_ =
-        test::ReadI420Buffer(static_cast<int>(width_),
-                             static_cast<int>(height_), files_[file_index_]);
-    RTC_CHECK(last_read_buffer_);
-  }
-  return frame_index_ != prev_frame_index || file_index_ != prev_file_index;
+        frame_index_ = 0;
+        file_index_ = (file_index_ + 1) % files_.size();
+        last_read_buffer_ =
+                test::ReadI420Buffer(static_cast<int>(width_),
+                                     static_cast<int>(height_), files_[file_index_]);
+        RTC_CHECK(last_read_buffer_);
+    }
+    return frame_index_ != prev_frame_index || file_index_ != prev_file_index;
 }
 
 SlideGenerator::SlideGenerator(int width, int height, int frame_repeat_count)
@@ -215,68 +298,68 @@ SlideGenerator::SlideGenerator(int width, int height, int frame_repeat_count)
       frame_display_count_(frame_repeat_count),
       current_display_count_(0),
       random_generator_(1234) {
-  RTC_DCHECK_GT(width, 0);
-  RTC_DCHECK_GT(height, 0);
-  RTC_DCHECK_GT(frame_repeat_count, 0);
+    RTC_DCHECK_GT(width, 0);
+    RTC_DCHECK_GT(height, 0);
+    RTC_DCHECK_GT(frame_repeat_count, 0);
 }
 
 FrameGeneratorInterface::VideoFrameData SlideGenerator::NextFrame() {
-  if (current_display_count_ == 0)
-    GenerateNewFrame();
-  if (++current_display_count_ >= frame_display_count_)
-    current_display_count_ = 0;
+    if (current_display_count_ == 0)
+        GenerateNewFrame();
+    if (++current_display_count_ >= frame_display_count_)
+        current_display_count_ = 0;
 
-  return VideoFrameData(buffer_, absl::nullopt);
+    return VideoFrameData(buffer_, absl::nullopt);
 }
 
 void SlideGenerator::GenerateNewFrame() {
-  // The squares should have a varying order of magnitude in order
-  // to simulate variation in the slides' complexity.
-  const int kSquareNum = 1 << (4 + (random_generator_.Rand(0, 3) * 2));
+    // The squares should have a varying order of magnitude in order
+    // to simulate variation in the slides' complexity.
+    const int kSquareNum = 1 << (4 + (random_generator_.Rand(0, 3) * 2));
 
-  buffer_ = I420Buffer::Create(width_, height_);
-  memset(buffer_->MutableDataY(), 127, height_ * buffer_->StrideY());
-  memset(buffer_->MutableDataU(), 127,
-         buffer_->ChromaHeight() * buffer_->StrideU());
-  memset(buffer_->MutableDataV(), 127,
-         buffer_->ChromaHeight() * buffer_->StrideV());
+    buffer_ = I420Buffer::Create(width_, height_);
+    memset(buffer_->MutableDataY(), 127, height_ * buffer_->StrideY());
+    memset(buffer_->MutableDataU(), 127,
+           buffer_->ChromaHeight() * buffer_->StrideU());
+    memset(buffer_->MutableDataV(), 127,
+           buffer_->ChromaHeight() * buffer_->StrideV());
 
-  for (int i = 0; i < kSquareNum; ++i) {
-    int length = random_generator_.Rand(1, width_ > 4 ? width_ / 4 : 1);
-    // Limit the length of later squares so that they don't overwrite the
-    // previous ones too much.
-    length = (length * (kSquareNum - i)) / kSquareNum;
+    for (int i = 0; i < kSquareNum; ++i) {
+        int length = random_generator_.Rand(1, width_ > 4 ? width_ / 4 : 1);
+        // Limit the length of later squares so that they don't overwrite the
+        // previous ones too much.
+        length = (length * (kSquareNum - i)) / kSquareNum;
 
-    int x = random_generator_.Rand(0, width_ - length);
-    int y = random_generator_.Rand(0, height_ - length);
-    uint8_t yuv_y = random_generator_.Rand(0, 255);
-    uint8_t yuv_u = random_generator_.Rand(0, 255);
-    uint8_t yuv_v = random_generator_.Rand(0, 255);
+        int x = random_generator_.Rand(0, width_ - length);
+        int y = random_generator_.Rand(0, height_ - length);
+        uint8_t yuv_y = random_generator_.Rand(0, 255);
+        uint8_t yuv_u = random_generator_.Rand(0, 255);
+        uint8_t yuv_v = random_generator_.Rand(0, 255);
 
-    for (int yy = y; yy < y + length; ++yy) {
-      uint8_t* pos_y = (buffer_->MutableDataY() + x + yy * buffer_->StrideY());
-      memset(pos_y, yuv_y, length);
+        for (int yy = y; yy < y + length; ++yy) {
+            uint8_t* pos_y = (buffer_->MutableDataY() + x + yy * buffer_->StrideY());
+            memset(pos_y, yuv_y, length);
+        }
+        for (int yy = y; yy < y + length; yy += 2) {
+            uint8_t* pos_u =
+                    (buffer_->MutableDataU() + x / 2 + yy / 2 * buffer_->StrideU());
+            memset(pos_u, yuv_u, length / 2);
+            uint8_t* pos_v =
+                    (buffer_->MutableDataV() + x / 2 + yy / 2 * buffer_->StrideV());
+            memset(pos_v, yuv_v, length / 2);
+        }
     }
-    for (int yy = y; yy < y + length; yy += 2) {
-      uint8_t* pos_u =
-          (buffer_->MutableDataU() + x / 2 + yy / 2 * buffer_->StrideU());
-      memset(pos_u, yuv_u, length / 2);
-      uint8_t* pos_v =
-          (buffer_->MutableDataV() + x / 2 + yy / 2 * buffer_->StrideV());
-      memset(pos_v, yuv_v, length / 2);
-    }
-  }
 }
 
 ScrollingImageFrameGenerator::ScrollingImageFrameGenerator(
-    Clock* clock,
-    const std::vector<FILE*>& files,
-    size_t source_width,
-    size_t source_height,
-    size_t target_width,
-    size_t target_height,
-    int64_t scroll_time_ms,
-    int64_t pause_time_ms)
+        Clock* clock,
+        const std::vector<FILE*>& files,
+        size_t source_width,
+        size_t source_height,
+        size_t target_width,
+        size_t target_height,
+        int64_t scroll_time_ms,
+        int64_t pause_time_ms)
     : clock_(clock),
       start_time_(clock->TimeInMilliseconds()),
       scroll_time_(scroll_time_ms),
@@ -289,90 +372,90 @@ ScrollingImageFrameGenerator::ScrollingImageFrameGenerator(
       current_source_frame_(nullptr, absl::nullopt),
       current_frame_(nullptr, absl::nullopt),
       file_generator_(files, source_width, source_height, 1) {
-  RTC_DCHECK(clock_ != nullptr);
-  RTC_DCHECK_GT(num_frames_, 0);
-  RTC_DCHECK_GE(source_height, target_height);
-  RTC_DCHECK_GE(source_width, target_width);
-  RTC_DCHECK_GE(scroll_time_ms, 0);
-  RTC_DCHECK_GE(pause_time_ms, 0);
-  RTC_DCHECK_GT(scroll_time_ms + pause_time_ms, 0);
+    RTC_DCHECK(clock_ != nullptr);
+    RTC_DCHECK_GT(num_frames_, 0);
+    RTC_DCHECK_GE(source_height, target_height);
+    RTC_DCHECK_GE(source_width, target_width);
+    RTC_DCHECK_GE(scroll_time_ms, 0);
+    RTC_DCHECK_GE(pause_time_ms, 0);
+    RTC_DCHECK_GT(scroll_time_ms + pause_time_ms, 0);
 }
 
 FrameGeneratorInterface::VideoFrameData
 ScrollingImageFrameGenerator::NextFrame() {
-  const int64_t kFrameDisplayTime = scroll_time_ + pause_time_;
-  const int64_t now = clock_->TimeInMilliseconds();
-  int64_t ms_since_start = now - start_time_;
+    const int64_t kFrameDisplayTime = scroll_time_ + pause_time_;
+    const int64_t now = clock_->TimeInMilliseconds();
+    int64_t ms_since_start = now - start_time_;
 
-  size_t frame_num = (ms_since_start / kFrameDisplayTime) % num_frames_;
-  UpdateSourceFrame(frame_num);
+    size_t frame_num = (ms_since_start / kFrameDisplayTime) % num_frames_;
+    UpdateSourceFrame(frame_num);
 
-  bool cur_frame_not_scrolled;
+    bool cur_frame_not_scrolled;
 
-  double scroll_factor;
-  int64_t time_into_frame = ms_since_start % kFrameDisplayTime;
-  if (time_into_frame < scroll_time_) {
-    scroll_factor = static_cast<double>(time_into_frame) / scroll_time_;
-    cur_frame_not_scrolled = false;
-  } else {
-    scroll_factor = 1.0;
-    cur_frame_not_scrolled = true;
-  }
-  CropSourceToScrolledImage(scroll_factor);
+    double scroll_factor;
+    int64_t time_into_frame = ms_since_start % kFrameDisplayTime;
+    if (time_into_frame < scroll_time_) {
+        scroll_factor = static_cast<double>(time_into_frame) / scroll_time_;
+        cur_frame_not_scrolled = false;
+    } else {
+        scroll_factor = 1.0;
+        cur_frame_not_scrolled = true;
+    }
+    CropSourceToScrolledImage(scroll_factor);
 
-  bool same_scroll_position =
-      prev_frame_not_scrolled_ && cur_frame_not_scrolled;
-  if (!same_scroll_position) {
-    // If scrolling is not finished yet, force full frame update.
-    current_frame_.update_rect =
-        VideoFrame::UpdateRect{0, 0, target_width_, target_height_};
-  }
-  prev_frame_not_scrolled_ = cur_frame_not_scrolled;
+    bool same_scroll_position =
+            prev_frame_not_scrolled_ && cur_frame_not_scrolled;
+    if (!same_scroll_position) {
+        // If scrolling is not finished yet, force full frame update.
+        current_frame_.update_rect =
+                VideoFrame::UpdateRect{0, 0, target_width_, target_height_};
+    }
+    prev_frame_not_scrolled_ = cur_frame_not_scrolled;
 
-  return current_frame_;
+    return current_frame_;
 }
 
 void ScrollingImageFrameGenerator::UpdateSourceFrame(size_t frame_num) {
-  VideoFrame::UpdateRect acc_update{0, 0, 0, 0};
-  while (current_frame_num_ != frame_num) {
-    current_source_frame_ = file_generator_.NextFrame();
-    if (current_source_frame_.update_rect) {
-      acc_update.Union(*current_source_frame_.update_rect);
+    VideoFrame::UpdateRect acc_update{0, 0, 0, 0};
+    while (current_frame_num_ != frame_num) {
+        current_source_frame_ = file_generator_.NextFrame();
+        if (current_source_frame_.update_rect) {
+            acc_update.Union(*current_source_frame_.update_rect);
+        }
+        current_frame_num_ = (current_frame_num_ + 1) % num_frames_;
     }
-    current_frame_num_ = (current_frame_num_ + 1) % num_frames_;
-  }
-  current_source_frame_.update_rect = acc_update;
+    current_source_frame_.update_rect = acc_update;
 }
 
 void ScrollingImageFrameGenerator::CropSourceToScrolledImage(
-    double scroll_factor) {
-  int scroll_margin_x = current_source_frame_.buffer->width() - target_width_;
-  int pixels_scrolled_x =
-      static_cast<int>(scroll_margin_x * scroll_factor + 0.5);
-  int scroll_margin_y = current_source_frame_.buffer->height() - target_height_;
-  int pixels_scrolled_y =
-      static_cast<int>(scroll_margin_y * scroll_factor + 0.5);
+        double scroll_factor) {
+    int scroll_margin_x = current_source_frame_.buffer->width() - target_width_;
+    int pixels_scrolled_x =
+            static_cast<int>(scroll_margin_x * scroll_factor + 0.5);
+    int scroll_margin_y = current_source_frame_.buffer->height() - target_height_;
+    int pixels_scrolled_y =
+            static_cast<int>(scroll_margin_y * scroll_factor + 0.5);
 
-  rtc::scoped_refptr<I420BufferInterface> i420_buffer =
-      current_source_frame_.buffer->ToI420();
-  int offset_y =
-      (i420_buffer->StrideY() * pixels_scrolled_y) + pixels_scrolled_x;
-  int offset_u = (i420_buffer->StrideU() * (pixels_scrolled_y / 2)) +
-                 (pixels_scrolled_x / 2);
-  int offset_v = (i420_buffer->StrideV() * (pixels_scrolled_y / 2)) +
-                 (pixels_scrolled_x / 2);
+    rtc::scoped_refptr<I420BufferInterface> i420_buffer =
+            current_source_frame_.buffer->ToI420();
+    int offset_y =
+            (i420_buffer->StrideY() * pixels_scrolled_y) + pixels_scrolled_x;
+    int offset_u = (i420_buffer->StrideU() * (pixels_scrolled_y / 2)) +
+            (pixels_scrolled_x / 2);
+    int offset_v = (i420_buffer->StrideV() * (pixels_scrolled_y / 2)) +
+            (pixels_scrolled_x / 2);
 
-  VideoFrame::UpdateRect update_rect =
-      current_source_frame_.update_rect->IsEmpty()
-          ? VideoFrame::UpdateRect{0, 0, 0, 0}
-          : VideoFrame::UpdateRect{0, 0, target_width_, target_height_};
-  current_frame_ = VideoFrameData(
-      WrapI420Buffer(target_width_, target_height_,
-                     &i420_buffer->DataY()[offset_y], i420_buffer->StrideY(),
-                     &i420_buffer->DataU()[offset_u], i420_buffer->StrideU(),
-                     &i420_buffer->DataV()[offset_v], i420_buffer->StrideV(),
-                     KeepRefUntilDone(i420_buffer)),
-      update_rect);
+    VideoFrame::UpdateRect update_rect =
+            current_source_frame_.update_rect->IsEmpty()
+            ? VideoFrame::UpdateRect{0, 0, 0, 0}
+            : VideoFrame::UpdateRect{0, 0, target_width_, target_height_};
+    current_frame_ = VideoFrameData(
+                WrapI420Buffer(target_width_, target_height_,
+                               &i420_buffer->DataY()[offset_y], i420_buffer->StrideY(),
+                               &i420_buffer->DataU()[offset_u], i420_buffer->StrideU(),
+                               &i420_buffer->DataV()[offset_v], i420_buffer->StrideV(),
+                               KeepRefUntilDone(i420_buffer)),
+                update_rect);
 }
 
 }  // namespace test

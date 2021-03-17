@@ -50,8 +50,9 @@ class FrameGeneratorCapturerVideoTrackSource : public VideoTrackSource {
         clock,
         test::CreateSquareFrameGenerator(config.width, config.height,
                                          absl::nullopt,
-                                         config.num_squares_generated),
-        config.frames_per_second, *task_queue_factory_);
+                                         2),
+
+                config.frames_per_second, *task_queue_factory_);
     video_capturer_->Init();
   }
 

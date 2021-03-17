@@ -23,6 +23,7 @@
 #include "rtc_base/critical_section.h"
 #include "rtc_base/random.h"
 #include "system_wrappers/include/clock.h"
+#include "../../../src/ffmpgDecoder.h"
 
 namespace webrtc {
 namespace test {
@@ -62,6 +63,7 @@ class SquareGenerator : public FrameGeneratorInterface {
   int width_ RTC_GUARDED_BY(&crit_);
   int height_ RTC_GUARDED_BY(&crit_);
   std::vector<std::unique_ptr<Square>> squares_ RTC_GUARDED_BY(&crit_);
+  DecoderMp4* m_video=nullptr;
 };
 
 class YuvFileGenerator : public FrameGeneratorInterface {

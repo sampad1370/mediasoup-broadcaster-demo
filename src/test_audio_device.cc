@@ -7,7 +7,7 @@
  *  in the file PATENTS.  All contributing project authors may
  *  be found in the AUTHORS file in the root of the source tree.
  */
-#include "modules/audio_device/include/test_audio_device.h"
+#include "test_audio_device.h"
 
 #include <algorithm>
 #include <cstdint>
@@ -34,6 +34,7 @@
 #include "rtc_base/task_utils/repeating_task.h"
 #include "rtc_base/thread_annotations.h"
 #include "rtc_base/time_utils.h"
+#include <iostream>
 
 namespace webrtc {
 
@@ -308,8 +309,9 @@ class WavFileReader final : public TestAudioDeviceModule::Capturer {
         num_channels_(num_channels),
         wav_reader_(std::move(wav_reader)),
         repeat_(repeat) {
-    RTC_CHECK_EQ(wav_reader_->sample_rate(), sampling_frequency_in_hz);
-    RTC_CHECK_EQ(wav_reader_->num_channels(), num_channels);
+    std::cout<<wav_reader_->sample_rate();
+    //RTC_CHECK_EQ(wav_reader_->sample_rate(), sampling_frequency_in_hz);
+    //RTC_CHECK_EQ(wav_reader_->num_channels(), num_channels);
   }
 
   const int sampling_frequency_in_hz_;
@@ -469,9 +471,9 @@ TestAudioDeviceModule::CreateDiscardRenderer(int sampling_frequency_in_hz,
 std::unique_ptr<TestAudioDeviceModule::Capturer>
 TestAudioDeviceModule::CreateWavFileReader(std::string filename,
                                            int sampling_frequency_in_hz,
-                                           int num_channels) {
+                                           int num_channels, bool repeat) {
   return std::make_unique<WavFileReader>(filename, sampling_frequency_in_hz,
-                                         num_channels, false);
+                                         num_channels, repeat);
 }
 
 std::unique_ptr<TestAudioDeviceModule::Capturer>

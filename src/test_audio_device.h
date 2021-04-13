@@ -105,7 +105,7 @@ class TestAudioDeviceModule : public AudioDeviceModule {
   static std::unique_ptr<Capturer> CreateWavFileReader(
       std::string filename,
       int sampling_frequency_in_hz,
-      int num_channels = 1);
+      int num_channels = 1, bool repeat=false);
 
   // Returns a Capturer instance that gets its data from a file.
   // Automatically detects sample rate and num of channels.

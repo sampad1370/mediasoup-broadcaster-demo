@@ -48,7 +48,7 @@ static void createFactory()
 	auto defaultQueueFActory=webrtc::CreateDefaultTaskQueueFactory();
 
 	auto fakeAudioCaptureModule = webrtc::TestAudioDeviceModule::Create(defaultQueueFActory.get(),
-																																			webrtc::TestAudioDeviceModule::CreatePulsedNoiseCapturer(10000, 48000),
+																																			webrtc::TestAudioDeviceModule::CreateWavFileReader("/home/admini/Downloads/BabyElephantWalk60.wav",48000,1,true),
 																																			webrtc::TestAudioDeviceModule::CreateDiscardRenderer(48000), 1.f);
 	if (!fakeAudioCaptureModule)
 	{
@@ -71,13 +71,13 @@ static void createFactory()
 	  networkThread,
 	  workerThread,
 	  signalingThread,
-	  fakeAudioCaptureModule,
+		fakeAudioCaptureModule,
 	  webrtc::CreateBuiltinAudioEncoderFactory(),
 	  webrtc::CreateBuiltinAudioDecoderFactory(),
 	  webrtc::CreateBuiltinVideoEncoderFactory(),
 	  webrtc::CreateBuiltinVideoDecoderFactory(),
-		nullptr,nullptr//webrtc::AudioMixerImpl::Create() /*audio_mixer*/,
-		/*webrtc::AudioProcessingBuilder().Create()*/ /*audio_processing*/);
+		webrtc::AudioMixerImpl::Create() /*audio_mixer*/,
+		webrtc::AudioProcessingBuilder().Create() /*audio_processing*/);
 
 	if (!factory)
 	{
@@ -89,21 +89,25 @@ static void createFactory()
 //	fakeAudioCaptureModule->InitPlayout();
 //	fakeAudioCaptureModule->InitRecording();
 //	fakeAudioCaptureModule->InitSpeaker();
-//	fakeAudioCaptureModule->SetMicrophoneVolume(100);
-//	fakeAudioCaptureModule->SetSpeakerVolume(100);
-//	fakeAudioCaptureModule->SetSpeakerMute(false);
+	fakeAudioCaptureModule->SetMicrophoneVolume(100);
+	fakeAudioCaptureModule->SetMicrophoneMute(true);
+	fakeAudioCaptureModule->SetSpeakerVolume(100);
+	fakeAudioCaptureModule->SetSpeakerMute(false);
 //	fakeAudioCaptureModule->StartPlayout();
 //	fakeAudioCaptureModule->StartRecording();
+	fakeAudioCaptureModule->StartRecording();
+	fakeAudioCaptureModule->StartPlayout();
 }
 
 // Audio track creation.
-rtc::scoped_refptr<webrtc::AudioTrackInterface> createAudioTrack(const std::string& label)
+rtc::scoped_refptr<webrtc::MediaStreamTrackInterface> createAudioTrack(const std::string& label)
 {
 	if (!factory)
 		createFactory();
 
 	cricket::AudioOptions options;
 	options.highpass_filter = false;
+
 
 	rtc::scoped_refptr<webrtc::AudioSourceInterface> source = factory->CreateAudioSource(options);
 
